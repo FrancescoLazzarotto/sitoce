@@ -12,7 +12,17 @@
   font-family: 'Geometria-Medium';
   src: url("../assets/fonts/geometria-medium.ttf");
 }
-
+@media (max-width: 900px) {
+  .logoce {
+    display:none;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  .header__content .title h1 {
+  display: none !important;
+  }
+}
 @media (min-width: 1400px) {
 .container{
     width:1370px;
@@ -28,7 +38,7 @@
   transition: transform 0.3s ease-in-out;
   
   filter: contrast(120%) brightness(110%);
- margin-top: 8vh;
+ margin-top: 10vh;
 }
 .logoce:hover {
     transform: scale(1.1); 
